@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="摸我"
+        android:background="#ff0000"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="跟随"
+        android:background="#00006f"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        app:layout_behavior="com.waj.testcoordinatorlayout.MyBehavior"
+        android:layout_marginLeft="100dp"
+        />
+</android.support.design.widget.CoordinatorLayout>
