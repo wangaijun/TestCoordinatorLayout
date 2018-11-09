@@ -36,4 +36,5 @@ boolean onDependentViewChange(parent,child,dependency)：如果layoutDependsOn �
 总之，在Bim5d使用CoordinateLayout的纪律很低
 
 参考网址：https://www.jianshu.com/p/ed569a44225a
+        https://blog.csdn.net/huachao1001/article/details/51554608
 
