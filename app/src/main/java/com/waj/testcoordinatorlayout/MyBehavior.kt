@@ -29,16 +29,9 @@ class MyBehavior<V : View>(context: Context?, attrs: AttributeSet?) :
         }
         else{
             //根据dependency的位置，设置child的位置
-            setPosition(child,width-dependency.left-child.width,dependency.top)
+            Position.setPosition(child,width-dependency.left-child.width,dependency.top)
 
             true
         }
-    }
-
-    private fun setPosition(child: V, x: Int, y: Int) {
-        val layoutParams = child.layoutParams as ViewGroup.MarginLayoutParams
-        layoutParams.leftMargin = x
-        layoutParams.topMargin = y
-//        child.layoutParams = layoutParams
     }
 }

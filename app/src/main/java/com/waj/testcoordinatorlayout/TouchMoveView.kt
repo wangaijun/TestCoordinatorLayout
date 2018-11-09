@@ -3,7 +3,6 @@ package com.waj.testcoordinatorlayout
 import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
-import android.view.View
 import android.widget.TextView
 
 class TouchMoveView(context: Context?, attrs: AttributeSet?) : TextView(context, attrs) {
@@ -21,10 +20,8 @@ class TouchMoveView(context: Context?, attrs: AttributeSet?) : TextView(context,
                 MotionEvent.ACTION_MOVE->{
                     val x = event.rawX-cx
                     val y = event.rawY-cy
-                    left += x.toInt()
-                    right += x.toInt()
-                    top += y.toInt()
-                    bottom += y.toInt()
+
+                    Position.setPosition(this,left+x.toInt(),top+y.toInt())
 
                     cx = event.rawX
                     cy = event.rawY
