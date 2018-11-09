@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <TextView
+    <com.waj.testcoordinatorlayout.TouchMoveView
         android:id="@+id/view"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:text="摸我"
-        android:background="#ff0000"
+        android:background="#00006f"
+        android:textColor="@android:color/white"
         android:gravity="center"
         />
 
@@ -21,7 +21,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:text="跟随"
-        android:background="#00006f"
+        android:background="#ffc800"
         android:textColor="@android:color/white"
         android:gravity="center"
         app:layout_behavior="com.waj.testcoordinatorlayout.MyBehavior"
